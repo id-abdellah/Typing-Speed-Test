@@ -78,6 +78,7 @@ lvlRadios.forEach(radio => {
 scoreFrom.innerHTML = words.length;
 
 gameStarter.addEventListener("click", () => {
+    if (choosedLevel == null) return;
     disabledRadio()
     showAllWord(words);
     showCurrentWordToType();
