@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typing speed test game</title>
+  <!--  -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="assets/css/all.min.css" />
+</head>
+
+<body>
+
+  <div class="hero">
+
+    <div class="game-title">
+      <div class="container">
+        <h2>Typing Speed Test Game</h1>
+      </div>
+    </div>
+
+
+    <div class="game-container">
+      <div class="container">
+
+        <div class="lvls">
+          <div>
+            <label for="easy">Easy</label>
+            <input type="radio" name="lvls" id="easy" value="easy">
+          </div>
+          <div>
+            <label for="medium">Medium</label>
+            <input type="radio" checked name="lvls" id="medium" value="medium">
+          </div>
+          <div>
+            <label for="hard">Hard</label>
+            <input type="radio" name="lvls" id="hard" value="hard">
+          </div>
+        </div>
+
+        <div class="show-level">
+          You are playing on <span class="level">[medium]</span> & you have <span class="level-duration">[3]</span>
+          seconds to type the word
+        </div>
+
+        <div class="info">
+          <div class="time-count">
+            Time left: <span class="time-left">3</span> seconds
+          </div>
+          <div class="score-count">
+            Score: <span class="score">0</span> From <span class="from">30</span>
+          </div>
+        </div>
+
+        <div class="game-starter">
+          <div class="current-word-to-type"></div>
+          <button>Start Playing</button>
+        </div>
+
+        <div class="word-input">
+          <input type="text">
+        </div>
+
+        <div class="upcoming-words">
+          Words will show here
+        </div>
+
+      </div>
+    </div>
+
+    <div class="lose-model">
+      <div class="content">
+        <span>Game Over</span>
+        <button class="restart">Restart</button>
+      </div>
+    </div>
+
+    <div class="win-model">
+      <div class="content">
+        <div class="icon"><img src="https://cdn-icons-png.flaticon.com/128/2274/2274543.png" alt="">
+        </div>
+        <span>Congratulations. You have successfully passed this level</span>
+        <button class="play-again">Play again</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
